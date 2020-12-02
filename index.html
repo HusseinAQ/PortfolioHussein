@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Husseins portfolio-side</title>
     <link rel="stylesheet" href="style.css">
+    <!--fontawesome------------>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section>
@@ -19,6 +23,10 @@
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Team</a></li>
             </ul>
+            <!--bars------------------------------>
+
+            <div class="toggle"></div>
+
         </nav>
         <!------text----------------------------------------->
         <div class="text-container">
@@ -34,7 +42,7 @@
 
     </section>
     <!-----om mig section-->
-    <div class="about-container"></div>
+    <div class="about-container">
     <!---------billeder---------------------------------------->
     <!---om mig text------------------------------------------->
     <div class="about-text">
@@ -43,7 +51,7 @@
         <p>Hej mit navn er Hussein. Jeg er studerende på multimediedesigner-uddannelsen hos Zealand, Køge.
             Er du interesseret i mit arbejde, og synes at jeg har gjort et godt stykke arbejde, så tøv ikke med at invitere
             mig ind til en kop kaffe og høre mere om mit formidabele stykke arbejde.</p>
-            
+
         <p>Er du interesseret i at få mere afvide, så tag fat i mig, og jeg vil komme med nogle gode løsninger!</p>
         <!----knap--------------------------------------------->
         <button>Book mig</button>
@@ -51,5 +59,87 @@
 
 
     </div>
+
+    </div>
+    <!---ydelser----------------------------------------------->
+    <div class="services">
+        <!------------Tekst---------------------------------------->
+        <div class="services-text">
+    <p>Ønsker du mine ydelser?</p>
+    <p>Ydelser du vil elske</p>
+    <p>Hvis i ønsker at se serviceminded, imødekommende og glad fyr, så er i havnet det rette sted. Jeg ligger hjertet i mit arbejde, og hopper ikke fra opgaven indtil den er færdig og klar til release.</p>
+
+
+
+    </div>
+    <!-----box------------------------------------------------------>
+    <div class="box-container">
+        <!----1------------->
+        <div class="box-1">
+        <span>1</span>
+        <p class="heading">Web Design</p>
+        <p class="detaljer">Hvis du gerne vil have en pragtfuld medarbejder, som går op i at levere et flot design, struktur over sit arbejde, så står jeg til rådighed!</p>
+        <button>Læs mere</button>
+        </div>
+        <!---2--------------->
+        <div class="box-2">
+        <span>1</span>
+        <p class="heading">Web udvikling</p>
+        <p class="detaljer">Hvis du gerne vil have en pragtfuld medarbejder, som går op i at levere et flot design, struktur over sit arbejde, så står jeg til rådighed!</p>
+        <button>Læs mere</button>
+
+        </div>
+        <!---3----------------->
+        <div class="box-3">
+        <span>1</span>
+        <p class="heading">Sikkerhed/SEO</p>
+        <p class="detaljer">Hvis du gerne vil have en pragtfuld medarbejder, som går op i at levere et flot design, struktur over sit arbejde, så står jeg til rådighed!</p>
+        <button>Læs mere</button>
+
+        </div>
+
+
+
+    </div>
+    </div>
+    <!---kontakt mig-------------------------------------------->
+    <div class="kontakt">
+    <p>Hvis du har et projekt i tankerne, så kontakt mig!</p>
+    <button>Kontakt mig</button>
+    </div>
+    <!--footer-------------------------------------------------->
+    <footer>
+    <p>Hussein Ali</p>
+    <p>Jeg arbejder udefra dine ønsker, og hvis det ikke er som ønsket, så laver jeg gerne om på det, indtil de er tilfredse!</p>
+    <!---social-------------------------------------------------->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <!--copyright----------------------------------------------->
+    <p class="copyright">Copyright © Hussein Ali</p>
+    </footer>
+    <!----sidebar med sociale medier ikoner-->
+    
+    <div class="a-social-b">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <!--jquery--------------------------------------------------->
+    <script type="text/javascript" src="Javascript.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+
+            })
+           })
+    
+    </script>
 </body>
 </html>
