@@ -481,7 +481,7 @@ transform: translateX(-90%);
 .toogle{
     display: block;
 }
-
+}
 
     .text-container p:nth-child(2){
         line-height: 40px;
